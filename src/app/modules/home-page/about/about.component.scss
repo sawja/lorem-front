@@ -1,0 +1,40 @@
+@import '~src/scss/_colors';
+
+.component-about {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4vh 0;
+    background-color: $background-white;
+    font-family: 'Roboto Condensed', sans-serif;
+    h1 {
+        text-align: center;
+        font-size: 150%;
+        margin-bottom: 1.5em;
+        color: $almost-black;
+    }
+    .about-desc {
+        margin: 0 auto;
+        p {
+            font-size: 110%;
+            line-height: 1.6;
+            color: $secondary-text;
+            font-weight: 100;
+        }
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .about-desc {
+        width: 90%;
+        font-size: 70%;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .about-desc {
+        width: 70%;
+    }
+}

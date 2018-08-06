@@ -1,0 +1,12 @@
+<nav class="home-navbar">
+  <div class="hamburger" (click)="toggleHamburger()"> 
+    <i class="fa fa-bars"></i>
+    <span>Menu</span>
+  </div>
+  <ul *ngIf="!routesVisible" class="nav-list" (click)="toggleHamburger()">
+    <li routerLink="/home-page" routerLinkActive="active-route"><i class="fa fa-home"></i>Lorem</li>
+    <li routerLink="/products-page" routerLinkActive="active-route"><i class="fa fa-phone"></i>Ipsum</li>
+    <li><i class="fa fa-microphone"></i>Dolor</li>
+    <li><i class="fa fa-themeisle"></i>Sit</li>
+  </ul>
+</nav>

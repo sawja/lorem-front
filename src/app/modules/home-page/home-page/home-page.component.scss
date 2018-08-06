@@ -1,0 +1,11 @@
+$home-screen-image: '/assets/images/laptop.png';
+
+.component-home-page {
+    background: 
+        //repeating-linear-gradient(-45deg, $white-overlay, $white-overlay 2px,rgba(150,150,150,1) 4px,rgba(150,150,150,1) 4px),
+        url($home-screen-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;    
+}

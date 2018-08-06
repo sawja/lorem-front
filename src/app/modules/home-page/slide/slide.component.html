@@ -1,0 +1,19 @@
+<div [ngClass]="{'animated': toggleAnimation}" class="slide">
+    <div class="slide-container img-container">
+        <img [src]="slide.imageSource">
+    </div>
+    <div class="slide-container slide-desc"> 
+        <div>
+          <p class="slide-info-main">Author</p>
+          <p class="slide-info-sub">{{slide.author}}</p>
+        </div>
+        <div>
+          <p class="slide-info-main">Description</p>
+          <p class="slide-info-sub">{{slide.description}}</p>
+        </div>
+        <div>
+          <p class="slide-info-main">Tags</p>
+          <span class="slide-info-sub">Tags: {{slide.tags.join(', ')}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+@import '~src/scss/_colors';
+
+.slide {
+    cursor: pointer;
+    img {
+        max-width: 100%;
+        border-radius: 15px;
+        opacity: 0.8;
+    }
+    .slide-container {
+        margin: 0 auto;
+    }
+    .slide-desc {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        p {
+            margin: 0;
+        }
+        div {
+            flex-basis: 33.3333%;
+        }
+        .slide-info-main {
+            font-size: 80%;
+            font-weight: 700;
+            color: $almost-black;
+        }
+        .slide-info-sub {
+            font-size: 70%;
+            font-weight: 100;
+            color: $secondary-text;
+        }
+
+    }
+}
+
+.animated {
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+    -moz-animation: fadeIn 1.5s;
+    -o-animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+
+@media  screen and (max-width: 600px) {
+    .slide-container {
+        width: 90%;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .slide-container {
+        width: 60%;
+    }
+}

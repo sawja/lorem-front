@@ -1,0 +1,28 @@
+@import '~src/scss/_colors';
+
+.component-footer {
+    padding: 1em 0;
+    background: rgba(0,0,0,0.8);
+    color: $secondary-text;
+    .footer-container {
+        width: 70%;
+        margin: auto;
+        p {
+            margin: 0;
+        }
+    }
+}
+
+
+@media  screen and (max-width: 600px) {
+    p {
+        font-size: 50%;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    p {
+        font-size: 70%;
+    }
+}
